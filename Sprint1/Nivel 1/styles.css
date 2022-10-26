@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 11px;
+    
+    
+
+}
+
+.principal{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+max-width: 1200px;
+margin: auto;
+
+
+
+}
+
+/* Header */
+
+.header{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+    .navegacion{
+    background-color: #1D1CE5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+        .nav1{
+        background-color: #B73E3E;
+        flex-grow: 1;
+        }
+        .nav2{
+        background-color: #B73E3E;
+        flex-grow: 5;
+        }
+        .nav3{
+        background-color: #B73E3E;
+        flex-grow: 1;
+        }
+
+/* Titulo */
+.titulo{
+    background-color: #674747;
+    
+}
+        h1{
+        background-color: #FDFDBD;
+        }
+
+/* Section */
+
+.contenido{
+    background: black;
+    display: flex;
+}
+
+/* Articulos */
+    .articulos{
+        background-color: #FF731D;
+        flex-grow: 2;
+        display:flex;
+        flex-wrap: wrap;
+    }
+        .articulo{
+            background-color: #FFF7E9;
+            flex-grow: 1;
+            flex-basis: 40%;
+        }
+        .final-articulo{
+            background-color: #628E90;
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+
+        /* Aside */
+
+     .aside{
+        background-color: #D0B8A8;
+        flex-grow: 1;
+     }   
+        .anuncio{
+            background-color: #54BAB9;
+        }
+
+/* Footer */
+
+.footer{
+    background: black;
+}
+    .final-footer{
+        background-color: #FFCB42;
+    }
+
+
+    /* Version tablet */
+
+    @media (max-width:768px){
+        .contenido{
+            flex-direction: column;
+        }
+
+        .contenido{
+            background: #FCE700;
+            
+        }
+    }
+
+    /* Version movil */
+
+    @media (max-width:600px){
+        .navegacion{
+            flex-direction: column;
+    
+        }
+
+        .contenido{
+            background: #829460;
+            
+        }
+
+        .articulos{
+            flex-direction: column;
+        }
+
+
+    
+
+    
+        
+    }
